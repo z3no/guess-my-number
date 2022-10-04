@@ -9,22 +9,31 @@
         <title>Guess The Number!</title>
     </head>
     <body>
+
         <header>
             <h1>Guess The Number!!</h1>
             <!-- a reference between which numbers to choose -->
+            <p class="between">(Between 1 and 20)</p>
             <!-- a restart button -->
+            <button class="button again">Try Again!</button>
             <!-- the number you have to guess -> "?" -->
+            <div class="number">"?"</div>
         </header>
 
         <main>
-            <section>
+            <section class="left">
                 <!-- input field for the number you want to give a go -->
+                <input class="guess" type="number">
                 <!-- a button if it will be the correct number -->
+                <button class="button check">Check!</button>
             </section>
-            <section>
+            <section class="right">
                 <!-- a message that will be displayed: Start guessing... / wrong or correct number -->
+                <p class="message">Take a guess...!</p>
                 <!-- a counter with your attempts left -->
+                <p class="label-score">💯 Score: <span class="score">20</span></p>
                 <!-- a highscore -->
+                <p class="label-highscore">🥇 Highscore: <span class="highscore">0</span></p>
             </section>
         </main>
 
